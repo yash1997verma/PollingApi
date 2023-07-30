@@ -1,5 +1,5 @@
 **Disclaimer**
-This API is completely open for anyone to use, there is Authentication or Authorization required to use it.
+This API is completely open for anyone to use, there is no Authentication or Authorization required to use it.
 
 **Adding a Question**
 Use route: '/questions/create'

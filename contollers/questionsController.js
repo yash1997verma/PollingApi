@@ -1,11 +1,11 @@
 const question = require('../models/question');
 const Question = require('../models/question');
 
-const mongoose = require('mongoose');
+
 module.exports.create = async(req, res)=>{
     try{
         const {question} = req.body;
-        const newQuestion = await Question.create({
+        await Question.create({
             question,        
 
         });

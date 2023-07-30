@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 async function main(){
     try{
-        await mongoose.connect('mongodb+srv://root:root@yashdb.ptmfvsc.mongodb.net/pollingApi');
+        await mongoose.connect(process.env.MONGO_URL);
         console.log(`connected to DB`);
 
     }catch(err){
