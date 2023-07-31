@@ -5,12 +5,13 @@ const Question = require('../models/question');
 module.exports.create = async(req, res)=>{
     try{
         const {question} = req.body;
-        await Question.create({
+        const newQuestion = await Question.create({
             question,        
 
         });
-   
-        res.status(200).json(`Question added`);
+        
+        
+        res.status(200).json(`Question added, id: ${newQuestion.id}`);
 
     }catch(err){
         res.status(500).json(`error in creating question ${err}`)

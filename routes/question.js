@@ -1,7 +1,7 @@
 const express = require('express');
 const  router  = express.Router();
 
-const questionController = require('../contollers/questionsController');
+const questionController = require('../controllers/questionsController');
 
 //for adding a new question
 router.post('/create', questionController.create);

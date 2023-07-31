@@ -22,7 +22,7 @@ module.exports.createOption = async (req,res)=>{
     const question = await Question.findById(id);
     question.options.push(newOption._id);
     question.save();
-    res.status(200).json(`option created`);
+    res.status(200).json(`option created, id : ${newOption._id}`);
     
    }catch(err){
     
