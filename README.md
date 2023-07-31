@@ -1,3 +1,5 @@
+Note: kindly use http for now to use api, will update the code later to make it work with https.
+
 **Disclaimer**
 This API is completely open for anyone to use, there is no Authentication or Authorization required to use it.
 
