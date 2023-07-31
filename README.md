@@ -1,3 +1,5 @@
+**Info**
+The API is hoted on AWS EC2 : http://65.0.102.84:8000
 Note: kindly use http for now to use api, will update the code later to make it work with https.
 
 **Disclaimer**
