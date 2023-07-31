@@ -1,6 +1,5 @@
 **Info**
-The API is hoted on AWS EC2 : http://65.0.102.84:8000
-Note: kindly use http for now to use api, will update the code later to make it work with https.
+The API is hosted on : https://pollingapi-cpcg.onrender.com
 
 **Disclaimer**
 This API is completely open for anyone to use, there is no Authentication or Authorization required to use it.
