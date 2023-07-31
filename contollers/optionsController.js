@@ -12,7 +12,9 @@ module.exports.createOption = async (req,res)=>{
         votes: 0,
     });
     //dynamically adding link to vote
-    const link = `http://localhost:8000/options/${newOption._id}/add_vote`
+    const protocol = req.protocol;
+    const host = req.get('host'); 
+    const link = `${protocol}://${host}/options/${newOption._id}/add_vote`;
     newOption.linkToVote = link;
     await newOption.save();
 

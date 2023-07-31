@@ -1,0 +1,4 @@
+apps:
+  - name: PollingApi
+    script: index.js
+    env_file: .env
